@@ -1,0 +1,68 @@
+/* Singularity Design System — tokens v1.1 (dark-only)
+   Source: VRC Audio Server — Themes/DarkTheme.xaml + App.xaml
+   Owner: Singularity Solutions and Services LLC */
+
+:root {
+  /* Neutrals */
+  --color-canvas:          #0F1722;
+  --color-surface:         #161F2D;
+  --color-surface-raised:  #1D2838;
+  --color-surface-sunken:  #0B0F17;
+  --color-border:          #2C3A4D;
+  --color-border-subtle:   #1A2333;
+  --color-text-primary:    #EAF1F8;
+  --color-text-secondary:  #9FB0C3;
+  --color-text-muted:      #9FB0C3;
+
+  /* Accent & signal */
+  --color-brand-cyan:      #2FA8C8; /* links, focus, selection, nav, segmented-active */
+  --color-brand-cyan-glow: #5BC8E8; /* icon-glyph glow only */
+  --color-blueprint-blue:  #1F5FAF; /* emphasis accent */
+  --color-signal-green:    #3FA56A; /* primary action, live, success */
+  --color-green-dim:       #34875A;
+  --color-amber:           #C48B2D; /* warning, degraded */
+  --color-red:             #B94E63; /* error, destructive, offline */
+  --color-on-accent:       #06131C; /* text on cyan/green fills */
+  --color-on-danger:       #FFFFFF; /* text on red fills */
+
+  /* Spacing (8px base, 4px tight) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;   /* default panel padding */
+  --space-xl: 24px;   /* between independent panels */
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+
+  /* Radius */
+  --radius-badge: 5px;
+  --radius-control: 9px;  /* buttons, inputs */
+  --radius-card: 12px;    /* panels */
+  --radius-window: 18px;  /* modals, icon buttons */
+  --radius-full: 9999px;  /* pills, circular transport */
+
+  /* Type */
+  --font-ui: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Consolas", ui-monospace, monospace;
+
+  --text-display: 600 28px/34px var(--font-ui);
+  --text-h1:      600 20px/26px var(--font-ui);
+  --text-h2:      600 15px/20px var(--font-ui);
+  --text-body:    400 13px/18px var(--font-ui);
+  --text-label:   500 12px/16px var(--font-ui);
+  --text-eyebrow: 600 11px/14px var(--font-ui); /* + text-transform: uppercase; letter-spacing: 0.06em */
+  --text-mono:    400 12px/18px var(--font-mono);
+
+  /* Elevation: 1px border + lighter fill. Shadows only for floating UI: */
+  --shadow-floating: 0 8px 24px rgba(0, 0, 0, 0.30);
+}
+
+/* Base surface + faint technical grid (4% white, 24px tile) */
+.singularity-canvas {
+  background-color: var(--color-canvas);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--color-text-secondary);
+}
